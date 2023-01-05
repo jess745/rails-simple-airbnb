@@ -1,0 +1,10 @@
+<h1>All our flats</h1>
+<div id="flats">
+  <% @flats.each do |flat| %>
+    <%= render flat %>
+    <p>
+    <%= link_to "More info", flat %>
+    </p>
+  <% end %>
+  <%= link_to "Add flat", new_flat_path %>
+</div>
